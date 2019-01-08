@@ -2,5 +2,5 @@
 A small collection of solutions to the Project Euler coded in Rust
 
 To run:
-
-# cargo run --bin <# OF PROBLEM>
+1. **cargo build**
+2. **cargo run --bin <# of problem>**
