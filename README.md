@@ -2,5 +2,6 @@
 A small collection of solutions to the Project Euler coded in Rust
 
 To run:
-1. **cargo build**
-2. **cargo run --bin <# of problem>**
+1. **cargo clean**
+2. **cargo build**
+3. **cargo run --bin p#_OF_PROBLEM** (e.g. __cargo run --bin p001__)
