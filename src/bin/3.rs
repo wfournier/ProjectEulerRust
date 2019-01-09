@@ -1,8 +1,8 @@
 fn main() {
-    println!("{}", largest_prime_factor(600_851_475_143));
+    println!("{}", solve(600_851_475_143));
 }
 
-fn largest_prime_factor(num: u64) -> u64 {
+fn solve(num: u64) -> u64 {
     prime_factors(num)
         .iter()
         .fold(0 as u64, |max, x| if x > &max { *x } else { max })

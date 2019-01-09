@@ -1,18 +1,21 @@
 fn main() {
-    let target: u64 = 10_001;
-    let mut primes: u64 = 1;
+    println!("{}", solve(10_001));
+}
 
-    let mut pos: u64 = 3;
-    while primes != target {
-        if is_prime(pos) {
-            primes += 1;
+fn solve(n: u64) -> u64 {
+    let mut pos: u64 = 1;
+
+    let mut curr: u64 = 3;
+    while pos != n {
+        if is_prime(curr) {
+            pos += 1;
         }
-        if primes != target {
-            pos += 2;
+        if pos != n {
+            curr += 2;
         }
     }
 
-    println!("{}: {}", primes, pos);
+    curr
 }
 
 fn is_prime(x: u64) -> bool {

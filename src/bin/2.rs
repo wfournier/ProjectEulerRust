@@ -1,24 +1,23 @@
 fn main() {
-    make_fib(4_000_000);
+    println!("{}", solve(4_000_000));
 }
 
-fn make_fib(max: i64){
-    let mut fib = vec![1,2];
-    let mut sum = 0;
+fn solve(max: u64) -> u64 {
+    let mut fib = vec![1, 2];
+    let mut sum: u64 = 0;
 
     loop {
         let n = fib.len();
-        let last = fib[n-1];
-        
+        let last = fib[n - 1];
+
         if last > max {
             break;
-        }
-        else if last % 2 == 0 {
+        } else if last % 2 == 0 {
             sum += last;
         }
 
-        let prev = fib[n-2];
+        let prev = fib[n - 2];
         fib.push(prev + last);
     }
-    println!("{}", sum);
+    sum
 }

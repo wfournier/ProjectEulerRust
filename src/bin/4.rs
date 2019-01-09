@@ -1,4 +1,9 @@
 fn main() {
+    let (num1, num2, highest) = solve();
+    println!("{} x {} = {}", num1, num2, highest);
+}
+
+fn solve() -> (u64, u64, u64) {
     let mut num1: u64 = 0;
     let mut num2: u64 = 0;
     let mut highest: u64 = 0;
@@ -17,5 +22,5 @@ fn main() {
         }
     }
 
-    println!("{} x {} = {}", num1, num2, highest);
+    (num1, num2, highest)
 }
