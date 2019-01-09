@@ -9,5 +9,6 @@ fn solve(n: u64) -> u64 {
             sum = sum + x;
         }
     }
+
     sum
 }
