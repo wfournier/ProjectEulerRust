@@ -1,5 +1,5 @@
 [package]
-name = "project_euler"
+name = "project-euler-rust"
 version = "0.1.0"
 authors = ["William Fournier <wfournier2710@gmail.com>"]
 
