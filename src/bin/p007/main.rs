@@ -19,10 +19,10 @@ fn solve(n: u64) -> u64 {
 }
 
 fn is_prime(x: u64) -> bool {
-    if x == 1 || x % 2 == 0 {
-        return false;
-    } else if x == 2 {
+    if x == 2 {
         return true;
+    } else if x == 1 || x % 2 == 0 {
+        return false;
     }
 
     let boundary: u64 = (x as f64).sqrt().floor() as u64;
@@ -32,5 +32,5 @@ fn is_prime(x: u64) -> bool {
         }
     }
 
-    return true;
+    true
 }
